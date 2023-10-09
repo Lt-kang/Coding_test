@@ -1,15 +1,7 @@
 
-# ord("a") = 97
+n = int(input())
+l = list(input())
 
-t = int(input())
-a = input()
-b = []
-rt = 0
+answer = [(ord(l[i])-96)*31**i for i in range(n)]
+print(sum(answer)%1234567891)
 
-for i in a:
-    b.append(ord(i)-96)
-
-for k in range(t):
-    rt += b[k]*(31**k)
-
-print(rt)
