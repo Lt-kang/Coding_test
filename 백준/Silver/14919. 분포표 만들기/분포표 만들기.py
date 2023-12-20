@@ -3,7 +3,8 @@ import heapq as h
 
 n = int(input())
 list_ = list(map(float, input().split()))
-h.heapify(list_)
+# h.heapify(list_)
+list_.sort()
 
 answer = []
 for i in range(1, n + 1):
